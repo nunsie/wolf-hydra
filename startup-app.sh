@@ -1,3 +1,4 @@
 #!/bin/bash
 
-hydra
+echo "Starting Hydra Launcher..."
+hydralauncher
