@@ -1,4 +1,4 @@
 #!/bin/bash
 
 echo "Starting Hydra Launcher..."
-hydralauncher
+hydralauncher --no-sandbox
