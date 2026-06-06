@@ -1,6 +1,10 @@
 FROM ghcr.io/games-on-whales/base-app:edge
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y \
+    libnotify4 \
+    xdg-utils \
+    libsecret-1-0 \
+    libappindicator3-1 \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
