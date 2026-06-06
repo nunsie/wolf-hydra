@@ -7,7 +7,7 @@ FROM ghcr.io/games-on-whales/base-app:edge
 # Install hydralauncher from pre-built deb
 RUN curl -fSL "https://github.com/hydralauncher/hydra/releases/download/v3.9.9/hydralauncher_3.9.9_amd64.deb" \
     -o /tmp/hydralauncher.deb \
-    && dpkg -i /tmp/hydralauncher.deb \
+    && apt install /tmp/hydralauncher.deb \
     && rm /tmp/hydralauncher.deb
 
 # Install as GOW startup hook
